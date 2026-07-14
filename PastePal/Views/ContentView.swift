@@ -7,16 +7,75 @@ struct ContentView: View {
     
     private let clipboardManager = ClipboardManager.shared
     
+    @State private var manualInput = ""
     @State private var searchText = ""
     @State private var activeFilter = "all"
     @State private var selectedItemIds = Set<String>()
     @State private var isEditMode = false
     
+    @AppStorage("historyLimit") private var historyLimit = 500
     @AppStorage("secureShredMode") private var secureShredMode = false
     
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
+                // Quick Add Bar
+                HStack(spacing: 8) {
+                    TextField("Paste or type clipboard content...", text: $manualInput)
+                        .textFieldStyle(.plain)
+                        .font(.subheadline)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 8)
+                        .background(Color.white.opacity(0.06))
+                        .cornerRadius(10)
+                    
+                    Button {
+                        let text = manualInput.trimmingCharacters(in: .whitespacesAndNewlines)
+                        guard !text.isEmpty else { return }
+                        
+                        // Auto-detect content type
+                        var detectedType = "text"
+                        var detectedTags: [String] = ["Manual"]
+                        
+                        if text.hasPrefix("http://") || text.hasPrefix("https://") {
+                            detectedType = "url"
+                            detectedTags.append("Link")
+                        } else {
+                            let codeKeywords = ["import ", "func ", "class ", "let ", "var ", "const ", "function", "<html>", "{"]
+                            for kw in codeKeywords {
+                                if text.contains(kw) {
+                                    detectedType = "code"
+                                    detectedTags.append("Code")
+                                    break
+                                }
+                            }
+                        }
+                        
+                        // Detect sensitive content
+                        let isSensitive = (text.count >= 4 && text.count <= 6 && text.allSatisfy { $0.isNumber }) ||
+                            ["password", "token", "secret", "api_key"].contains { text.lowercased().contains($0) }
+                        
+                        let newItem = PasteItem(
+                            content: text,
+                            contentType: detectedType,
+                            sourceAppName: "Manual Input",
+                            isSensitive: isSensitive,
+                            tags: detectedTags
+                        )
+                        modelContext.insert(newItem)
+                        try? modelContext.save()
+                        manualInput = ""
+                        triggerHaptic()
+                    } label: {
+                        Image(systemName: "plus.circle.fill")
+                            .font(.title2)
+                            .foregroundColor(.blueColor)
+                    }
+                    .disabled(manualInput.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                }
+                .padding(.horizontal)
+                .padding(.vertical, 6)
+                
                 // Header Categories Filter Bar
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
@@ -199,8 +258,12 @@ struct ContentView: View {
     }
     
     // Core Methods
+    private var limitedItems: [PasteItem] {
+        Array(items.prefix(historyLimit))
+    }
+    
     private func filterItems() -> [PasteItem] {
-        return items.filter { item in
+        return limitedItems.filter { item in
             let matchesSearch = searchText.isEmpty || 
                 item.content.localizedCaseInsensitiveContains(searchText) ||
                 item.sourceAppName.localizedCaseInsensitiveContains(searchText) ||

@@ -171,12 +171,11 @@ struct TipJarView: View {
     @State private var storeNotConfigured = false
     
     var body: some View {
-        VStack(spacing: 24) {
+        VStack(spacing: 20) {
             VStack(spacing: 8) {
                 Image(systemName: "heart.circle.fill")
-                    .font(.system(size: 60))
+                    .font(.system(size: 48))
                     .foregroundColor(.pink)
-                    .padding(.top)
                 
                 Text("Support PastePal")
                     .font(.title2)
@@ -258,7 +257,8 @@ struct TipJarView: View {
             }
             .padding()
         }
-        .presentationDetents([.medium])
+        .padding(.top, 20)
+        .presentationDetents([.fraction(0.65)])
         .presentationDragIndicator(.visible)
         .background(Color(red: 0.1, green: 0.1, blue: 0.12).edgesIgnoringSafeArea(.all))
         .alert("Thank You! 🎉", isPresented: $purchaseSuccess) {
