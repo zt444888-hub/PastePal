@@ -3,266 +3,269 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		804795188F2351DD8D8B203B /* PastePalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ACF5696F4556799FE27D2F /* PastePalApp.swift */; };
-		AA713C6F79A35168B89DA7E7 /* PasteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252606993AC51E8A1DFCC0A /* PasteItem.swift */; };
-		596C2C9064695FFF955A27DC /* ClipboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E28AD51EF5D7F84AAEDF0 /* ClipboardManager.swift */; };
-		E42D1E544EA652F2A2A551B1 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C460350AA95B8585ED9310 /* IAPManager.swift */; };
-		7A2BF293A8E85FCA8BC97A56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4708150F5AE5610961B3406 /* ContentView.swift */; };
-		FAF3958428E25471963581E8 /* PasteItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5FDB277A25629942EFF81 /* PasteItemRowView.swift */; };
-		70B233DB052C5B20A2B6FD71 /* PasteItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979DC3AFD80252BCA529CF5F /* PasteItemDetailView.swift */; };
-		B39A604B5FE9535C8D13FD36 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9474C04F6750A492EBC8C6 /* SettingsView.swift */; };
-		0E8B7561253E5B5FA3FF9AA6 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DEBE69BA15565FAAAFE63D /* AnalyticsView.swift */; };
-		039A4C62F63C5AE5A7CA2B97 /* JsonTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA8FE54CB905E699B9C66E9 /* JsonTreeView.swift */; };
-		BC1090E54A2A5EDD91E13432 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D878FE65F5468AAD530D0 /* ColorExtensions.swift */; };
-		E6088671AF0F57DA8E44B061 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D385F716A5A278971660D /* Extensions.swift */; };
-		D06BA24788A75F5FB652BD7C /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F3CB682E25AC0805DA5D7 /* AppTabView.swift */; };
-		8E38AD23D6355ADBA3AE3705 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B59F9707E5FCDBB1BD8CA /* FavoritesView.swift */; };
-		85D138A5BEED53A4AD1F351E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01931F11E2995CD9B7FAD2B4 /* OnboardingView.swift */; };
-
 /* Begin PBXFileReference section */
-		75ACF5696F4556799FE27D2F /* PastePalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/PastePalApp.swift; sourceTree = SOURCE_ROOT; };
-		5252606993AC51E8A1DFCC0A /* PasteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Models/PasteItem.swift; sourceTree = SOURCE_ROOT; };
-		5B8E28AD51EF5D7F84AAEDF0 /* ClipboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Services/ClipboardManager.swift; sourceTree = SOURCE_ROOT; };
-		09C460350AA95B8585ED9310 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Services/IAPManager.swift; sourceTree = SOURCE_ROOT; };
-		A4708150F5AE5610961B3406 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Views/ContentView.swift; sourceTree = SOURCE_ROOT; };
-		80E5FDB277A25629942EFF81 /* PasteItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Views/PasteItemRowView.swift; sourceTree = SOURCE_ROOT; };
-		979DC3AFD80252BCA529CF5F /* PasteItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Views/PasteItemDetailView.swift; sourceTree = SOURCE_ROOT; };
-		CD9474C04F6750A492EBC8C6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Views/SettingsView.swift; sourceTree = SOURCE_ROOT; };
-		24DEBE69BA15565FAAAFE63D /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Views/AnalyticsView.swift; sourceTree = SOURCE_ROOT; };
-		DFA8FE54CB905E699B9C66E9 /* JsonTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Views/JsonTreeView.swift; sourceTree = SOURCE_ROOT; };
-		BE8D878FE65F5468AAD530D0 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Views/ColorExtensions.swift; sourceTree = SOURCE_ROOT; };
-		555D385F716A5A278971660D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Views/Extensions.swift; sourceTree = SOURCE_ROOT; };
-		376F3CB682E25AC0805DA5D7 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Views/AppTabView.swift; sourceTree = SOURCE_ROOT; };
-		569B59F9707E5FCDBB1BD8CA /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Views/FavoritesView.swift; sourceTree = SOURCE_ROOT; };
-		01931F11E2995CD9B7FAD2B4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePal/Views/OnboardingView.swift; sourceTree = SOURCE_ROOT; };
-		BDC4AA4D41635604A5C39E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PastePal/Info.plist; sourceTree = SOURCE_ROOT; };
-		6B2234BBF1295CF2B9FD4501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PastePal/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		389068D06D045E7580D6BCBB /* StoreKitConfig.storekit */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PastePal/StoreKitConfig.storekit; sourceTree = SOURCE_ROOT; };
-		339F19EBFF5D52D0AD5FA5AD /* PastePal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastePal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F74976300A60680038CF00 /* PastePal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastePal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A4F74978300A60680038CF00 /* PastePal */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PastePal;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4F74973300A60680038CF00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A2C74E42637530592494153 /* Products */ = {
-			isa = PBXGroup; children = (
-				339F19EBFF5D52D0AD5FA5AD,
-			); name = Products; sourceTree = "<group>";
-		};
-		0F6C326AA7EB5193B13A1666 /* PastePal */ = {
-			isa = PBXGroup; children = (
-				75ACF5696F4556799FE27D2F,
-				5252606993AC51E8A1DFCC0A,
-				5B8E28AD51EF5D7F84AAEDF0,
-				09C460350AA95B8585ED9310,
-				A4708150F5AE5610961B3406,
-				80E5FDB277A25629942EFF81,
-				979DC3AFD80252BCA529CF5F,
-				CD9474C04F6750A492EBC8C6,
-				24DEBE69BA15565FAAAFE63D,
-				DFA8FE54CB905E699B9C66E9,
-				BE8D878FE65F5468AAD530D0,
-				555D385F716A5A278971660D,
-				376F3CB682E25AC0805DA5D7,
-				569B59F9707E5FCDBB1BD8CA,
-				01931F11E2995CD9B7FAD2B4,
-				BDC4AA4D41635604A5C39E19,
-				6B2234BBF1295CF2B9FD4501,
-				389068D06D045E7580D6BCBB,
-				4A2C74E42637530592494153,
-			); name = PastePal; sourceTree = "<group>";
-		};
-		1164F2E3C2565A53B90E0B93 /* */ = {
-			isa = PBXGroup; children = (
-				0F6C326AA7EB5193B13A1666,
-			); sourceTree = "<group>";
-		};
-
-/* Begin PBXSourcesBuildPhase section */
-		AF933F142BF55DD0978C0171 /* Sources */ = {
-			isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
-				804795188F2351DD8D8B203B,
-				AA713C6F79A35168B89DA7E7,
-				596C2C9064695FFF955A27DC,
-				E42D1E544EA652F2A2A551B1,
-				7A2BF293A8E85FCA8BC97A56,
-				FAF3958428E25471963581E8,
-				70B233DB052C5B20A2B6FD71,
-				B39A604B5FE9535C8D13FD36,
-				0E8B7561253E5B5FA3FF9AA6,
-				039A4C62F63C5AE5A7CA2B97,
-				BC1090E54A2A5EDD91E13432,
-				E6088671AF0F57DA8E44B061,
-				D06BA24788A75F5FB652BD7C,
-				8E38AD23D6355ADBA3AE3705,
-				85D138A5BEED53A4AD1F351E,
-			); runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9437891B2A4591E9CFB8D22 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
-		CE25E3BC183B52F285DFA6EC /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
-
-		9759419B13EB52498A13A4F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "PastePal/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pastepal.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = (iphonesimulator, iphoneos);
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		BBECDE99D1DD5A79AD01A405 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "PastePal/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pastepal.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = (iphonesimulator, iphoneos);
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_COMPILATION_MODE = wholemodule;
-			};
-			name = Release;
-		};
-		DF83DA7C9A5B592595B237EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "PastePal/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pastepal.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = (iphonesimulator, iphoneos);
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		BABE23E729AF5142934F7603 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "PastePal/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pastepal.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = (iphonesimulator, iphoneos);
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_COMPILATION_MODE = wholemodule;
-			};
-			name = Release;
-		};
-
-		37F5DF30E50C5AB1B4B5430A /* Build configuration list for PBXProject */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9759419B13EB52498A13A4F5,
-				BBECDE99D1DD5A79AD01A405,
+		A4F7496D300A60680038CF00 = {
+			isa = PBXGroup;
+			children = (
+				A4F74978300A60680038CF00 /* PastePal */,
+				A4F74977300A60680038CF00 /* Products */,
 			);
-			defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;
+			sourceTree = "<group>";
 		};
-		18DCE26465155E55BD650DDF /* Build configuration list for PBXNativeTarget */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF83DA7C9A5B592595B237EE,
-				BABE23E729AF5142934F7603,
+		A4F74977300A60680038CF00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4F74976300A60680038CF00 /* PastePal.app */,
 			);
-			defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;
+			name = Products;
+			sourceTree = "<group>";
 		};
+/* End PBXGroup section */
 
-		B17C8397E36E57CFAF14B07A /* PastePal */ = {
+/* Begin PBXNativeTarget section */
+		A4F74975300A60680038CF00 /* PastePal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18DCE26465155E55BD650DDF;
+			buildConfigurationList = A4F74981300A606B0038CF00 /* Build configuration list for PBXNativeTarget "PastePal" */;
 			buildPhases = (
-				AF933F142BF55DD0978C0171,
-				A9437891B2A4591E9CFB8D22,
-				CE25E3BC183B52F285DFA6EC,
+				A4F74972300A60680038CF00 /* Sources */,
+				A4F74973300A60680038CF00 /* Frameworks */,
+				A4F74974300A60680038CF00 /* Resources */,
 			);
-			buildRules = (); dependencies = ();
-			name = PastePal; productName = PastePal;
-			productReference = 339F19EBFF5D52D0AD5FA5AD;
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A4F74978300A60680038CF00 /* PastePal */,
+			);
+			name = PastePal;
+			packageProductDependencies = (
+			);
+			productName = PastePal;
+			productReference = A4F74976300A60680038CF00 /* PastePal.app */;
 			productType = "com.apple.product-type.application";
 		};
+/* End PBXNativeTarget section */
 
-		65CBCC7607865ADEA2496794 /* Project object */ = {
+/* Begin PBXProject section */
+		A4F7496E300A60680038CF00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					A4F74975300A60680038CF00 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
 			};
-			buildConfigurationList = 37F5DF30E50C5AB1B4B5430A;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = A4F74971300A60680038CF00 /* Build configuration list for PBXProject "PastePal" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 1164F2E3C2565A53B90E0B93;
-			productRefGroup = 4A2C74E42637530592494153;
+			mainGroup = A4F7496D300A60680038CF00;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A4F74977300A60680038CF00 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B17C8397E36E57CFAF14B07A,
+				A4F74975300A60680038CF00 /* PastePal */,
 			);
 		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4F74974300A60680038CF00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4F74972300A60680038CF00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A4F7497F300A606B0038CF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4F74980300A606B0038CF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A4F74982300A606B0038CF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2VBHV3VJ8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleIconName = AppIcon;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSPasteboardUsageDescription = "PastePal needs access to your clipboard to automatically save your copied text and make it searchable later.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIDeviceFamily = "1,2";
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanbei.pastepal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4F74983300A606B0038CF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2VBHV3VJ8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleIconName = AppIcon;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSPasteboardUsageDescription = "PastePal needs access to your clipboard to automatically save your copied text and make it searchable later.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIDeviceFamily = "1,2";
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanbei.pastepal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4F74971300A60680038CF00 /* Build configuration list for PBXProject "PastePal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F7497F300A606B0038CF00 /* Debug */,
+				A4F74980300A606B0038CF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4F74981300A606B0038CF00 /* Build configuration list for PBXNativeTarget "PastePal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F74982300A606B0038CF00 /* Debug */,
+				A4F74983300A606B0038CF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
 	};
-	rootObject = 65CBCC7607865ADEA2496794;
+	rootObject = A4F7496E300A60680038CF00 /* Project object */;
 }

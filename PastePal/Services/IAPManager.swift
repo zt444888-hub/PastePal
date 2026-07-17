@@ -18,9 +18,9 @@ class IAPManager: ObservableObject {
     @Published var storeAvailable = false
     
     private let productIDs = [
-        "com.pastepal.tip.coffee",
-        "com.pastepal.tip.meal",
-        "com.pastepal.tip.supercharge"
+        "com.yuanbei.pastepal.tip.coffee",
+        "com.yuanbei.pastepal.tip.meal",
+        "com.yuanbei.pastepal.tip.supercharge"
     ]
     
     func loadProducts() async {

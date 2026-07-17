@@ -1,8 +1,6 @@
 .DS_Store
-build/
-*.xcuserdata
-*.xcworkspace/xcuserdata
+xcuserdata/
 DerivedData/
-*.xcuserstate
-*.xcuserdata
-AppIcon 1.appiconset/
+*.xcworkspace/xcuserdata/
+build/
+*.ipa

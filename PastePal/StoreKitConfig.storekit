@@ -5,7 +5,7 @@
       "displayPrice" : "$1.99",
       "displayName" : "Developer Espresso",
       "description" : "A small tip to support PastePal development",
-      "productID" : "com.pastepal.tip.coffee",
+      "productID" : "com.yuanbei.pastepal.tip.coffee",
       "type" : "Consumable",
       "price" : 1.99,
       "locale" : "en_US"
@@ -14,7 +14,7 @@
       "displayPrice" : "$4.99",
       "displayName" : "Developer Combo Meal",
       "description" : "A bigger tip to help fund new features",
-      "productID" : "com.pastepal.tip.meal",
+      "productID" : "com.yuanbei.pastepal.tip.meal",
       "type" : "Consumable",
       "price" : 4.99,
       "locale" : "en_US"
@@ -23,7 +23,7 @@
       "displayPrice" : "$9.99",
       "displayName" : "Supercharger Support",
       "description" : "The biggest tip — fuels weeks of development",
-      "productID" : "com.pastepal.tip.supercharge",
+      "productID" : "com.yuanbei.pastepal.tip.supercharge",
       "type" : "Consumable",
       "price" : 9.99,
       "locale" : "en_US"
